@@ -1,0 +1,98 @@
+body {
+    background-color: whitesmoke;
+}
+
+form {
+    width: auto;
+    height: 250px;
+    border-radius: 0px 0px 20px 20px;
+    background-color: aquamarine;
+    padding: 15px 30px 50px 30px;
+    text-align: end;
+}
+
+h1 {
+    margin-right: 26%;
+}
+
+#memeContainer img {
+    width: 400px;
+}
+
+#memeContainer .memeDiv {
+    position: relative;
+    text-align: center;
+    display: inline-block;
+    margin: 30px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+#memeContainer p {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 15px 0;
+    padding: 0 5px;
+    font-family: impact;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000,
+        -2px 2px 0 #000, 0px 2px 0 #000, 2px 0px 0 #000, 0px -2px 0 #000,
+        -2px 0px 0 #000, 2px 2px 5px #000;
+}
+
+.topText {
+    top: 0px;
+}
+
+.bottomText {
+    bottom: 0px;
+}
+
+.memeDiv:hover .hoverDiv {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: black;
+    opacity: 0.6;
+}
+
+.deleteBtn {
+    visibility: hidden;
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    font-size: 2em;
+    background-color: transparent;
+    border: none;
+    color: azure;
+}
+
+
+.memeDiv:hover .deleteBtn {
+    visibility: visible;
+}
+
+.deleteBtn:hover {
+    border-radius: 5px;
+    background-color: red;
+    color: #000;
+}
+
+
+#topTextInput, #bottomTextInput, #imageUrlInput, #generateBtn {
+    margin: 1em;
+}
+
+#topTextInput, #bottomTextInput, #imageUrlInput {
+    width: 60%;
+}
